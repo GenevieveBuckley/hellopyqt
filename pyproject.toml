@@ -16,7 +16,7 @@ description = "My first application"
 icon = "src/hellopyqt/resources/hellopyqt"
 sources = ['src/hellopyqt']
 requires = [
-    'PyQt5',]
+    'PyQt5==5.14.2',]
 
 
 [tool.briefcase.app.hellopyqt.macOS]
