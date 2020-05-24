@@ -1,0 +1,37 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "hellopyqt"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/hellopyqt"
+license = "BSD license"
+author = 'Jane Developer'
+author_email = "jane@example.com"
+
+[tool.briefcase.app.hellopyqt]
+formal_name = "hellopyqt"
+description = "My first application"
+icon = "src/hellopyqt/resources/hellopyqt"
+sources = ['src/hellopyqt']
+requires = [
+    'PyQt5',]
+
+
+[tool.briefcase.app.hellopyqt.macOS]
+requires = []
+
+[tool.briefcase.app.hellopyqt.linux]
+requires = []
+system_requires = []
+
+[tool.briefcase.app.hellopyqt.windows]
+requires = []
+
+# Mobile deployments
+[tool.briefcase.app.hellopyqt.iOS]
+requires = []
+
+[tool.briefcase.app.hellopyqt.android]
+requires = []
